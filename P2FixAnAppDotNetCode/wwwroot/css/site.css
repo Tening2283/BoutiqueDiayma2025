@@ -1,6 +1,27 @@
-﻿body {
+﻿:root {
+    --bg-color: #fafafa;
+    --text-color: #222222;
+    --primary-color: #2a9d8f; /* teal-ish */
+    --accent-color: #e76f51;
+    --muted-color: #6c757d;
+    --card-bg: #ffffff;
+}
+
+body {
     padding-bottom: 20px;
-    background-color: burlywood;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Roboto, -apple-system, 'Helvetica Neue', Arial;
+}
+
+/* Dark theme variables */
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --primary-color: #90caf9;
+    --accent-color: #ffb74d;
+    --muted-color: #c7c7c7;
+    --card-bg: #1f1f1f;
 }
 
 /* Wrapping element */
@@ -11,7 +32,38 @@
 }
 
 table {
-    background-color: white;
+    background-color: var(--card-bg);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: transparent;
+    color: white;
+}
+.btn-primary:hover {
+    filter: brightness(90%);
+}
+
+/* Language selector styling */
+.language-select {
+    width: 220px;
+    display: inline-block;
+}
+.language-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(42,157,143,0.25);
+}
+
+/* Theme toggle */
+.theme-toggle {
+    margin-top: 6px;
+}
+
+/* Better layout spacing */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 

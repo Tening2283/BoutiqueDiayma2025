@@ -6,7 +6,7 @@
           asp-href-include="/lib/bootstrap/dist/**/*.min.css"
           asp-href-exclude="**/*-reboot*,**/*-grid*" />
     <link rel="stylesheet" asp-href-include="/lib/fontawesome/css/*.css" />
-    @*<link rel="stylesheet" asp-href-include="/css/*.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" />
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
@@ -18,6 +18,9 @@
             <a class="col navbar-brand" asp-action="Index" asp-controller="Product" style="padding-left:12%">
                 Boutique Diayma
             </a>
+            <div class="col-2 text-right" style="padding-right:2%">
+                <button id="themeToggle" class="btn btn-sm btn-secondary theme-toggle" aria-label="Toggle theme"><i class="fa fa-adjust"></i></button>
+            </div>
             <div class="col-4 text-right" style="padding-right:12%">
                 @await Component.InvokeAsync("CartSummary")
             </div>
@@ -37,5 +40,21 @@
     </div>
 
     @RenderSection("Scripts", required: false)
+    <script>
+        (function () {
+            // Theme toggler: store in localStorage and apply as a class to body
+            var themeToggle = document.getElementById('themeToggle');
+            var currentTheme = localStorage.getItem('diayma-theme') || 'light';
+            if (currentTheme === 'dark') document.body.classList.add('dark-theme');
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    document.body.classList.toggle('dark-theme');
+                    var nowDark = document.body.classList.contains('dark-theme');
+                    localStorage.setItem('diayma-theme', nowDark ? 'dark' : 'light');
+                });
+            }
+        })();
+    </script>
 </body>
 </html>

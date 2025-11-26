@@ -1,15 +1,21 @@
 ﻿@model P2FixAnAppDotNetCode.Models.ViewModels.LanguageViewModel
+@using Microsoft.AspNetCore.Localization
+
+@{
+    var rqf = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = rqf?.RequestCulture.Culture.Name ?? "en";
+}
 
 <form asp-action="ChangeUiLanguage" asp-controller="Language" method="post">
     <div class="form-group">
         <label class="col-md-3 control-label" style="float:left">@Localizer["Language"]</label>
         <div class="col-md-7" style="float:left">
-            <select asp-for="Language">
-                <option disabled selected style="font-style:italic">@Localizer["ChangeLanguage"]</option>
-                    <option value="en">@Localizer["LanguageEnglish"]</option>
-                    <option value="fr">@Localizer["LanguageFrench"]</option>
-                    <option value="es">@Localizer["LanguageSpanish"]</option>
-                    <option value="wo">@Localizer["LanguageWolof"]</option>
+            <select asp-for="Language" class="form-control language-select">
+                <option disabled style="font-style:italic">@Localizer["ChangeLanguage"]</option>
+                <option value="en" @(currentCulture.StartsWith("en") ? "selected" : "")>@Localizer["LanguageEnglish"]</option>
+                <option value="fr" @(currentCulture.StartsWith("fr") ? "selected" : "")>@Localizer["LanguageFrench"]</option>
+                <option value="es" @(currentCulture.StartsWith("es") ? "selected" : "")>@Localizer["LanguageSpanish"]</option>
+                <option value="wo" @(currentCulture.StartsWith("wo") ? "selected" : "")>@Localizer["LanguageWolof"]</option>
             </select>
         </div>
         <input type="hidden" name="returnUrl"
