@@ -6,9 +6,10 @@
         <div class="col-md-7" style="float:left">
             <select asp-for="Language">
                 <option disabled selected style="font-style:italic">@Localizer["ChangeLanguage"]</option>
-                <option value="English">@Localizer["LanguageEnglish"]</option>
-                <option value="French">@Localizer["LanguageFrench"]</option>
-                <option value="Spanish">@Localizer["LanguageSpanish"]</option>
+                    <option value="en">@Localizer["LanguageEnglish"]</option>
+                    <option value="fr">@Localizer["LanguageFrench"]</option>
+                    <option value="es">@Localizer["LanguageSpanish"]</option>
+                    <option value="wo">@Localizer["LanguageWolof"]</option>
             </select>
         </div>
         <input type="hidden" name="returnUrl"

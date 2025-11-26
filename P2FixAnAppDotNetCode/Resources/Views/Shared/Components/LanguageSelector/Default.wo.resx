@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -132,7 +132,7 @@
   <data name="LanguageSpanish" xml:space="preserve">
     <value>Espagnol</value>
   </data>
-   <data name="LanguageWolof" xml:space="preserve">
+  <data name="LanguageWolof" xml:space="preserve">
     <value>Wolof</value>
   </data>
 </root>

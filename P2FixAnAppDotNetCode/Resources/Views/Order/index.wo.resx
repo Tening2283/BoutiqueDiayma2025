@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,22 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ChangeLanguage" xml:space="preserve">
-    <value>Sélectionnez</value>
+  <data name="Adress" xml:space="preserve">
+    <value>Adresse</value>
   </data>
-  <data name="Language" xml:space="preserve">
-    <value>Langue</value>
+  <data name="City" xml:space="preserve">
+    <value>Ville</value>
   </data>
-  <data name="LanguageEnglish" xml:space="preserve">
-    <value>Anglais</value>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>parel commande bi</value>
   </data>
-  <data name="LanguageFrench" xml:space="preserve">
-    <value>Français</value>
+  <data name="Country" xml:space="preserve">
+    <value>Pays</value>
   </data>
-  <data name="LanguageSpanish" xml:space="preserve">
-    <value>Espagnol</value>
+  <data name="EnterDetails" xml:space="preserve">
+    <value>Sa commande legui mou paré</value>
   </data>
-   <data name="LanguageWolof" xml:space="preserve">
-    <value>Wolof</value>
+  <data name="Location" xml:space="preserve">
+    <value>Fo deuk</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>No Toudou</value>
+  </data>
+  <data name="OrderTitle" xml:space="preserve">
+    <value>Rempliral formulaire bi</value>
+  </data>
+  <data name="ShipSoon" xml:space="preserve">
+    <value>Legui niou livrel la</value>
+  </data>
+  <data name="ShipTo" xml:space="preserve">
+    <value>Envoyeko</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Sa Code postal</value>
   </data>
 </root>
