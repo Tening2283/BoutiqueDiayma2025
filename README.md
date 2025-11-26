@@ -97,8 +97,7 @@ Le projet est disponible sur GitHub :
 ## 10. Lien Google Drive
 
 Voici le lien vers les fichiers publiés et livrables :  
-[https://drive.google.com/drive/folders/1mRfVQh30N_dVfy0DbX3gTucfcwDlj5QJ?usp=drive_link](https://drive.google.com/drive/folders/1mRfVQh30N_dVfy0DbX3gTucfcwDlj5QJ?usp=drive_link)
-
+https://drive.google.com/file/d/1MEODLlzKH-bOKkSY11j3JWbmBvYAccSU/view?usp=sharing
 ---
 
 ## 11. Modifications apportées (commits)
